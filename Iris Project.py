@@ -9,12 +9,12 @@ from sklearn.metrics import confusion_matrix
 from sklearn.preprocessing import StandardScaler
 
 flowers = load_iris()
-X = flowers.data
+X = flowers.data   
 Y = flowers.target
 
 #Training and Testing accuracy with K-neighbors using Model
 X_train,X_test,y_train,y_test = train_test_split(X,Y)
-k = range(1,28)  #1 to 28 k-neighbors
+k = range(1,28)  #1 to 28 k-neighbors  
 test_accuracy = []
 train_accuracy = []
 for neighbors in k:
